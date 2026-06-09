@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch checkpoints / model weights
+*.pt
+*.pth
+
+# Outputs of evaluation
+confusion_matrix.png
+metrics.json
+
+# Dataset folders (both dummy and real)
+dummy_elliptic_dataset/
+elliptic_bitcoin_dataset/
+
+# IDE files
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
