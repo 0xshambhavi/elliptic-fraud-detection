@@ -61,6 +61,30 @@ python eval.py --data_dir ./dummy_elliptic_dataset --model_path best_model.pt --
 
 ---
 
+## Local Verification Stats
+
+When running the pipeline locally on the generated synthetic dataset (500 nodes, 800 edges, 20 epochs), the following stats were obtained:
+
+### Dataset Splits (Synthetic):
+- **Total Labeled Nodes**: 232 (Licit: 183, Illicit: 49)
+- **Train Split (60%)**: 139 nodes (Licit: 110, Illicit: 29)
+- **Val Split (20%)**: 46 nodes (Licit: 36, Illicit: 10)
+- **Test Split (20%)**: 47 nodes (Licit: 37, Illicit: 10)
+- **Class Imbalance Ratio**: 3.7931
+
+### Test Evaluation Metrics:
+- **Accuracy**: 31.9149%
+- **Precision**: 22.5000%
+- **Recall**: 90.0000%
+- **F1-Score**: 36.0000%
+- **AUC-ROC**: 40.2703%
+
+> [!NOTE]
+> Since the synthetic dataset is generated completely randomly, these metrics represent a baseline validation of the code's mathematical and technical correctness rather than predictive power. When trained on the real Elliptic Bitcoin dataset, the GraphSAGE model will achieve significantly higher accuracy, precision, and AUC-ROC.
+
+---
+
+
 ## Google Colab T4 GPU Execution Guide
 
 To train on the complete **Elliptic Bitcoin Dataset** (which has over 200,000 nodes and 230,000 edges) on Colab T4 GPU:
