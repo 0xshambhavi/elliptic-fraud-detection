@@ -17,9 +17,6 @@ pip-delete-this-directory.txt
 *.pt
 *.pth
 
-# Outputs of evaluation
-confusion_matrix.png
-metrics.json
 
 # Dataset folders (both dummy and real)
 dummy_elliptic_dataset/
