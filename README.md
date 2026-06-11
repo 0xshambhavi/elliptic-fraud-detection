@@ -1,4 +1,4 @@
-# Graph-Based Fraud Detection on Elliptic Bitcoin Dataset
+# CryptoGraph — GNN-Based Fraud Detection on Blockchain Transaction Networks
 
 This project implements a complete graph-based fraud detection pipeline using PyTorch Geometric (PyG) to detect illicit Bitcoin transactions. 
 
